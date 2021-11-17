@@ -5,9 +5,9 @@ const numbersArray = ['apple', 'orange', 'peach'];
 
 // TODO destructure the object to extract name and age of the person 
 const person = {
-    name: 'abcde',
-    age: 10,
-    gender: 'm'
+    firstName: 'Manasa',
+    age: 20,
+    gender: 'F'
 };
 
 //Solution: 
@@ -20,8 +20,8 @@ console.log(peach)
 
 //Object Destructuring
 
-const { name, age } = person
-console.log(name)
+const { firstName, age } = person
+console.log(firstName)
 console.log(age)
 
 //Question 2
@@ -35,14 +35,14 @@ const array2 = [4, 5, 6];
 
 // TODO combine below objects into one personDetails object 
 const basicDetails = {
-    name: 'abcde',
-    age: 10,
-    gender: 'm'
+    name: 'Manasa',
+    age: 20,
+    gender: 'F'
 };
 
 const educationDetails = {
-    degree: 'xyz',
-    college: 'anc',
+    degree: 'B.Tech',
+    college: 'Lovely Professional University',
 }
 
 //COmbining array
@@ -82,11 +82,7 @@ console.log(largestNumber([-1, -5, 0, -100]))
 
 function updateSalaries(employeesArray, percent) {
     // TODO complete this 
-    let updated_employee_array = employeesArray.map(salary => {
-        let percentage = salary * (percent / 100)
-        salary += percentage
-        return salary
-    });
+    let updated_employee_array = employeesArray.map(salary => salary + salary * (percent / 100));
     return updated_employee_array
 }
 
