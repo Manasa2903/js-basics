@@ -55,3 +55,44 @@ console.log(array3)
 const personDetails = {...basicDetails, ...educationDetails }
 console.log(personDetails)
     //console.log(`Combined Object is : ${personDetails}`)
+
+//Question 3
+
+function largestNumber(numArray) {
+
+    let max_value = numArray[0]
+    numArray.forEach(element => {
+        if (element > max_value) {
+            max_value = element
+        }
+    });
+    return max_value
+}
+
+/* Test 1:  
+    Input: numArray = [1,5,7,9] 
+    Output: 9 
+*/
+
+console.log(largestNumber([1, 5, 7, 9]))
+console.log(largestNumber([-1, -5, 0, -100]))
+
+
+//Question 4
+
+function updateSalaries(employeesArray, percent) {
+    // TODO complete this 
+    let updated_employee_array = employeesArray.map(salary => {
+        let percentage = salary * (percent / 100)
+        salary += percentage
+        return salary
+    });
+    return updated_employee_array
+}
+
+/* Test 1:  
+    Input: employeesArray = [100,500,700,400], percent = 10 
+    Output: [110, 550, 770, 440] 
+*/
+console.log(updateSalaries([100, 500, 700, 400], 10))
+console.log(updateSalaries([100, 500, 700, 400], 12))
