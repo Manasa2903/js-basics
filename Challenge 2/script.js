@@ -40,3 +40,22 @@ Test 2:
 */
 console.log(areAllEqual(['test', 'test', 'test']));
 console.log(areAllEqual([1, 1, 1, 2]));
+
+//Question 3
+
+function subArray(arr, n) {
+    return arr.slice([arr.length - n])
+}
+
+/* 
+Test 1: 
+  Input: subArray([1, 2, 3, 4, 5], 2) 
+  Output: [ 4, 5 ] 
+ 
+Test 2: 
+  Input: subArray([1, 2, 3], 6) 
+  Output: [ 1, 2, 3 ] 
+*/
+
+console.log(subArray([1, 2, 3, 4, 5], 2));
+console.log(subArray([1, 2, 3], 6));
