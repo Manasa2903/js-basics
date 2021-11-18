@@ -18,8 +18,8 @@ function findFreq(str, char) {
     Output: 4 
 */
 
-console.log(`The Character occured ${findFreq('How many times does the character occur in this sentence?', 'm')} times`);
-console.log(`The Character occured ${findFreq('How many times does the character occur in this sentence?', 'h')} times`);
+console.log(`The Character occurred ${findFreq('How many times does the character occur in this sentence?', 'm')} times`);
+console.log(`The Character occurred ${findFreq('How many times does the character occur in this sentence?', 'h')} times`);
 
 
 // Question 2
