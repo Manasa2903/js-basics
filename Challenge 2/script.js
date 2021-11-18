@@ -44,7 +44,7 @@ console.log(areAllEqual([1, 1, 1, 2]));
 //Question 3
 
 function subArray(arr, n) {
-    return arr.slice([arr.length - n])
+    return arr.slice(-n)
 }
 
 /* 
