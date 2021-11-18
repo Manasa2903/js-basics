@@ -82,8 +82,7 @@ console.log(largestNumber([-1, -5, 0, -100]))
 
 function updateSalaries(employeesArray, percent) {
     // TODO complete this 
-    let updated_employee_array = employeesArray.map(salary => salary + salary * (percent / 100));
-    return updated_employee_array
+    return employeesArray.map(salary => salary + salary * (percent / 100));
 }
 
 /* Test 1:  
