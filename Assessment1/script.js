@@ -38,7 +38,7 @@ function findNumbers(array, sum) {
     for (i = 0; i < array.length; i++) {
         for (j = i + 1; j < array.length; j++) {
             if (array[i] + array[j] === sum) {
-                sum_array.push([array[i], array[j]])
+                sum_array.push(array[i], array[j])
             }
         }
     }
